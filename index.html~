@@ -51,10 +51,9 @@
                     <li>
                         <a href="about.html">About</a>
                     </li>
-                    <!--- Commenting out services from the nav bar for now
-		    <li>
+                    <li>
                         <a href="services.html">Services</a>
-			</li> --->
+                    </li>
                     <li>
                         <a href="contact.html">Contact</a>
                     </li>
