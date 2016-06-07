@@ -119,47 +119,6 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-image:url('https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/13165878_1102905979731789_1354617620414659886_n.jpg?oh=2eabed98211dde19fd0e23dd7b94037f&oe=57AB294D&text=Slide-One'); padding-bottom: 50%;"></div>
-                <div class="carousel-caption">
-                    <h2 style="color: #555; text-shadow: 0.5em 0.5em 0.5em #111">Directiva AECC-UPRRP 2015-2016</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('http://ccom.uprrp.edu/~acm/wp-content/uploads/2014/01/acm-fb-banner.png');"></div>
-                <div class="carousel-caption">
-                    <h2 style="color: #555; text-shadow: 0.5em 0.5em 0.5em #111">Official ACM Chapter</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/11899750_973485389340516_5770403842649804449_n.png?oh=d41ec0ca0c398a21767d49d7fa0f715b&oe=57DDE7A5');padding-bottom: 50%;"></div>
-                <div class="carousel-caption">
-                    <h2>Upcoming Event</h2>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
-
-
 
         <!-- Features Section -->
         
@@ -188,8 +147,9 @@
 			--->
         <!-- /.row -->
 
-    <iframe src="https://docs.google.com/forms/d/1nIe86Y8pxuCkdfHBUYfnfW61632OBkwW8S3yeYq6jX8/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
+    <div class="signup-form" style="center">
+        <iframe src="https://docs.google.com/forms/d/1nIe86Y8pxuCkdfHBUYfnfW61632OBkwW8S3yeYq6jX8/viewform?embedded=true" width="100%" height="70%" frameborder="0" marginheight="0" marginwidth="0" align="center">Loading...</iframe>
+    </div>
         <hr>
 
         <!-- Footer -->
