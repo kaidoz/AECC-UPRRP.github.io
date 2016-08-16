@@ -1,0 +1,40 @@
+<html ng-app="adminApp">
+    <head>
+     <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+
+    <script src="admin.js"></script> 
+    
+    
+    
+    </head>
+    <body ng-controller="addMemberCtrl">
+        <form ng-submit="addMember()">
+            <div>
+                <label>Name:</label>
+                <input type="text" id="name" ng-model="name" placeholder="Israel Dilan" name="name">
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" id="email" ng-model="email" placeholder="israel.dilan@upr.edu" name="email">
+            </div>
+            <div>
+                <label>Facebook Link:</label>
+                <input type="url" id="facebook" ng-model="facebook" placeholder="https://www.facebook.com/israelodilan" size="75" name="facebook"> 
+            </div>
+            <div>
+                <label>Profile Pic Link:</label>
+                <input type="url" id="profilePic" size="75" ng-model="profilePic" name="profilePic">  
+            </div>
+            <input type="submit" value="Add Member">
+        </form>
+        
+        
+    </body>
+</html>
