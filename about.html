@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="about">
 
 <head>
 
@@ -32,7 +32,7 @@
 
 </head>
 
-<body>
+<body ng-controller="aboutCtrl">
 
         <!--Navigation Bar  -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -293,13 +293,13 @@
             <div class="col-lg-12">
                 <h2 class="page-header">Our Members</h2>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
+            <div class="col-md-2 col-sm-4 col-xs-6" ng-repeat="member in members">
                 <div class="thumbnail">
                     <ul class="list-inline text-center">
-                        <a href="mailto:jachan.santiago@gmail.com"><small>Jeffrey Chan</small></a>
-                        <li><a href="https://www.facebook.com/DJ4.Chan"><i class="fa fa-lg fa-facebook"></i></a></li>
+                        <a href="mailto:{{member.email}}"><small>{{member.name}}</small></a>
+                        <li><a href="{{member.facebookProfile}}"><i class="fa fa-lg fa-facebook"></i></a></li>
                     </ul>
-                    <img class="img-responsive customer-img" src="images/jchan.jpg" alt="Jeffrey Chan">
+                    <img class="img-responsive customer-img" height="600px" width="400px" src="{{member.profilePic}}" alt="{{member.name}}">
                 </div>
             </div>
 <!--             <div class="col-md-2 col-sm-4 col-xs-6">
@@ -367,6 +367,16 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+
+    <script src="js/about.js"></script>    
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
