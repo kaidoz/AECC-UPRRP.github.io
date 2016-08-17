@@ -1,5 +1,10 @@
 <html ng-app="adminApp">
     <head>
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+        
      <!-- AngularJS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 
@@ -9,31 +14,44 @@
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
 
+    <!-- Controller -->
     <script src="admin.js"></script> 
+    
     
     
     
     </head>
     <body ng-controller="addMemberCtrl">
+        <center style="margin: auto; margin-top:45px">
         <form ng-submit="addMember()">
-            <div>
-                <label>Name:</label>
-                <input type="text" id="name" ng-model="name" placeholder="Israel Dilan" name="name">
+            <div id="container" class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-textfield mdl-js-textfield">
+                <input type="text" class="mdl-textfield__input" id="name" ng-model="name" placeholder="Israel Dilan" name="name">
+                <label class="mdl-textfield__label" for="name">Name</label>
             </div>
-            <div>
-                <label>Email:</label>
-                <input type="email" id="email" ng-model="email" placeholder="israel.dilan@upr.edu" name="email">
+            <div class="mdl-textfield mdl-js-textfield">
+                <input type="email" class="mdl-textfield__input" id="email" ng-model="email" placeholder="israel.dilan@upr.edu" name="email">
+                <label class="mdl-textfield__label" for="email">Email</label>
             </div>
-            <div>
-                <label>Facebook Link:</label>
-                <input type="url" id="facebook" ng-model="facebook" placeholder="https://www.facebook.com/israelodilan" size="75" name="facebook"> 
+            <div class="mdl-textfield mdl-js-textfield">
+                <input type="url" class="mdl-textfield__input" id="facebook" ng-model="facebook" placeholder="https://www.facebook.com/israelodilan" size="75" name="facebook" validate>
+                <label class="mdl-textfield__label" for="facebook">Facebook Link</label>
             </div>
-            <div>
-                <label>Profile Pic Link:</label>
-                <input type="url" id="profilePic" size="75" ng-model="profilePic" name="profilePic">  
+            <div class="mdl-textfield mdl-js-textfield">
+                <input type="url" class="mdl-textfield__input" id="profilePic" size="75" ng-model="profilePic" name="profilePic">
+                <label class="mdl-textfield__label" for="profilePic">Profile Pic Link</label>
+
             </div>
-            <input type="submit" value="Add Member">
+            <div >
+              <button type="submit" style="float: right; margin-right: 20px; margin-bottom : 20px" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                Add Member
+                </button>
+                
+            </div>
+            
+            </div>
         </form>
+        </center>
         
         
     </body>
