@@ -25,6 +25,8 @@ function addMemberController ($scope, $firebaseObject) {
     
     $scope.addMember = function (){
         
+        if( $scope.name && $scope.email )
+        
         var membersRef = firebase.database().ref('members');
         membersRef.push({
             name: $scope.name,
