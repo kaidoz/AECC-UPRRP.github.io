@@ -1,5 +1,25 @@
 <html ng-app="adminApp">
     <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Design Lite</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
     <!-- Material Design Lite -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
@@ -23,11 +43,12 @@
     
     </head>
     <body ng-controller="addMemberCtrl" class="" style="background-color: #666">
-        <div style="" class="mdl-grid" >
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone"></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-phone"  >
+<!--            <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone"></div>-->
         <form ng-submit="addMember()" >
-            <div id="container" style="margin-left: 20px" class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div id="container" style="margin: auto; margin-top: 10%" class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text"> Member Form</h2>
+            </div>
             <div class="mdl-textfield mdl-js-textfield" style="margin: auto">
                 <input type="text" class="mdl-textfield__input" id="name" ng-model="name" placeholder="Israel Dilan" name="name" required>
                 <label class="mdl-textfield__label" for="name">Name</label>
@@ -54,9 +75,6 @@
             
             </div>
         </form>
-            </div>
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone"></div>
-        </div>
 
         <!-- Debug 
         <pre>
